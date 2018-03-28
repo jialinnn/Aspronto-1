@@ -21,13 +21,13 @@ namespace Aspronto
         {
             dateEntry.Text;
             painResult.Text;
-            
+            //missing the function that calculate which checkbox has been selected.
             moodPicker.Text;
             symptomResult.isTogged.ToString();
-
+		//
             dietresult.Text;
             changeResult.isTogged.ToString();
-
+		//
             additionalComment.Text;
         }
 
