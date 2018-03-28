@@ -31,6 +31,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MapPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -55,8 +59,23 @@
       <DependentUpon>WelcomePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Model\Profile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MapPage.xaml.cs">
+      <DependentUpon>MapPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Helper\Constant.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\CO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Logic\COLogic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\NO2.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\O3.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\SO2.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Logic\NO2Logic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Logic\O3Logic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Logic\SO2Logic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Journal.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Model\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Helper\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Logic\" />
   </ItemGroup>
 </Project>

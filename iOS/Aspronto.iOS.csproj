@@ -124,6 +124,31 @@
     <Reference Include="Xamarin.Forms.Maps.iOS">
       <HintPath>..\packages\Xamarin.Forms.Maps.3.0.0.296286-pre2\lib\Xamarin.iOS10\Xamarin.Forms.Maps.iOS.dll</HintPath>
     </Reference>
+    <Reference Include="Plugin.Permissions.Abstractions">
+      <HintPath>..\packages\Plugin.Permissions.2.2.1\lib\Xamarin.iOS10\Plugin.Permissions.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Permissions">
+      <HintPath>..\packages\Plugin.Permissions.2.2.1\lib\Xamarin.iOS10\Plugin.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Geolocator.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Geolocator.5.0.0.187-beta\lib\Xamarin.iOS10\Plugin.Geolocator.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Geolocator">
+      <HintPath>..\packages\Xam.Plugin.Geolocator.5.0.0.187-beta\lib\Xamarin.iOS10\Plugin.Geolocator.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenWeatherMap.Standard">
+      <HintPath>..\packages\OpenWeatherMap.Standard.0.5.1\lib\netstandard2.0\OpenWeatherMap.Standard.dll</HintPath>
+    </Reference>
+    <Reference Include="XFShapeView">
+      <HintPath>..\packages\VG.XFShapeView.1.0.5\lib\Xamarin.iOS10\XFShapeView.dll</HintPath>
+    </Reference>
+    <Reference Include="XFShapeView.iOS">
+      <HintPath>..\packages\VG.XFShapeView.1.0.5\lib\Xamarin.iOS10\XFShapeView.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Nine.Animation">
+      <HintPath>..\packages\Nine.Animation.1.0.43-alpha\lib\portable-net45+win+wp80\Nine.Animation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
@@ -144,7 +169,35 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Content\opml-icon-64x64.png" />
+    <BundleResource Include="Content\opml-icon-32x32.png" />
+    <BundleResource Include="Content\opml-icon-24x24.png" />
+    <BundleResource Include="Content\opml-icon-16x16.png" />
+    <BundleResource Include="Content\opml-icon-12x12.png" />
+    <BundleResource Include="Content\opml-icon-128x128.png" />
+    <BundleResource Include="Content\opml-icon-10x10.png" />
+    <BundleResource Include="Content\openshareicon-64x64.png" />
+    <BundleResource Include="Content\openshareicon-64x64.jpg" />
+    <BundleResource Include="Content\openshareicon-32x32.png" />
+    <BundleResource Include="Content\openshareicon-32x32.jpg" />
+    <BundleResource Include="Content\openshareicon-24x24.png" />
+    <BundleResource Include="Content\openshareicon-24x24.jpg" />
+    <BundleResource Include="Content\openshareicon-16x16.png" />
+    <BundleResource Include="Content\openshareicon-16x16.jpg" />
+    <BundleResource Include="Content\openshareicon-150x150.png" />
+    <BundleResource Include="Content\openshareicon-150x150.jpg" />
+    <BundleResource Include="Content\openshareicon-14x14.png" />
+    <BundleResource Include="Content\openshareicon-14x14.jpg" />
+    <BundleResource Include="Content\openshareicon-12x12.png" />
+    <BundleResource Include="Content\openshareicon-12x12.jpg" />
+    <BundleResource Include="Content\openshareicon-128x128.png" />
+    <BundleResource Include="Content\openshareicon-128x128.jpg" />
+    <BundleResource Include="Content\openshareicon-10x10.png" />
+    <BundleResource Include="Content\openshareicon-10x10.jpg" />
+  </ItemGroup>
   <Import Project="..\Aspronto\Aspronto.projitems" Label="Shared" Condition="Exists('..\Aspronto\Aspronto.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.3.0.0.296286-pre2\build\netstandard2.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.3.0.0.296286-pre2\build\netstandard2.0\Xamarin.Forms.targets')" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
 </Project>

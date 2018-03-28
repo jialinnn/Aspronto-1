@@ -6,7 +6,7 @@
     
     <local:DashboardPage Title="Dashboard" />
     <local:JournalPage Title="Journal"/>
-    <local:EducationPage Title="Education"/>
+    <local:MapPage Title="Map"/>
     <local:ProfilePage Title="Profile"/>
     
 </TabbedPage>

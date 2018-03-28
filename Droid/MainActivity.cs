@@ -8,6 +8,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using System.IO;
+using Plugin.CurrentActivity;
 
 namespace Aspronto.Droid
 {
@@ -22,6 +23,7 @@ namespace Aspronto.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            Xamarin.FormsMaps.Init(this, bundle);
 
             string dbname = "aspronto_db";
 

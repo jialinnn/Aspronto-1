@@ -5,8 +5,12 @@
     x:Class="Aspronto.DashboardPage">
     
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <Label Text="Welcome to Dashboard Page."></Label>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Start" Margin="20">
+            <Label x:Name="currentLocation" HorizontalOptions="Center"/>
+            <Label x:Name="CO"></Label>
+            <Label x:Name="O3"></Label>
+            <Label x:Name="NO2"></Label>
+            <Label x:Name="SO2"></Label>
             <ProgressBar></ProgressBar>
         </StackLayout>
     </ContentPage.Content>
