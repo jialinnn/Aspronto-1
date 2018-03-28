@@ -6,7 +6,7 @@ namespace Aspronto.Model
     public class Profile
     {
         [PrimaryKey, AutoIncrement]
-        public iny Id
+        public int Id
         {
             get;
             set;
